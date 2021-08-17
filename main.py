@@ -7,12 +7,13 @@ if __name__ == '__main__':
     # unittest.main()
 
     vb = VigenereBreaker()
-    f = open(dir_path + "/" + "message.txt", "r")
     option = 1
     language = "english"
 
     while(option != 0):
+        f = open(dir_path + "/" + "message.txt", "r")
         message = f.read()
+        f.close()
         
         print("\nChoose a option")
         print("1 - Encrypt a message")
